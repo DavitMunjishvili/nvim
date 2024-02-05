@@ -65,8 +65,6 @@ return {
     },
   },
 
-  { import = "lazyvim.plugins.extras.lang.typescript" },
-
   {
     "nvim-treesitter/nvim-treesitter",
     opts = function(_, opts)
