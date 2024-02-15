@@ -6,7 +6,10 @@ vim.keymap.set("n", "<leader>sp", '<cmd>lua require("spectre").open_file_search(
   desc = "Search on current file",
 })
 
-vim.keymap.set("n", "<leader>t", "<cmd>terminal<cr>", { desc = "Terminal" })
+vim.keymap.set("n", "<leader>t", function()
+  vim.cmd("terminal")
+  vim.cmd("startinsert")
+end, { desc = "Terminal" })
 
 -- [r]eveal [c]urrent buffer in NeoTree
 vim.keymap.set("n", "<leader>rc", "<cmd>Neotree reveal<cr>", { desc = "Reveal current file Neotree" })
