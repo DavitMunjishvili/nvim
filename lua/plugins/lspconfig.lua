@@ -1,16 +1,24 @@
 return {
   {
-    "pmizio/typescript-tools.nvim",
-    dependencies = { "nvim-lua/plenary.nvim", "neovim/nvim-lspconfig" },
-    opts = {},
-  },
-  {
     "neovim/nvim-lspconfig",
     dependencies = {},
     ---@class PluginLspOpts
     opts = {
       ---@type lspconfig.options
-      servers = {},
+      servers = {
+        tailwindcss = {
+          settings = {
+            tailwindCSS = {
+              experimental = {
+                classRegex = {
+                  { "cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]" },
+                  { "cx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)" },
+                },
+              },
+            },
+          },
+        },
+      },
       setup = {},
     },
   },
