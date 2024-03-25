@@ -5,6 +5,12 @@ return {
     opts = {},
   },
   { "dmmulroy/ts-error-translator.nvim" },
-  { "dmmulroy/tsc.nvim", opts = { setup = {} } },
+  {
+    "dmmulroy/tsc.nvim",
+    opts = {
+      setup = {},
       auto_start_watch_mode = true,
+      spinner = { ".", "|" },
+    },
+  },
 }
