@@ -1,4 +1,5 @@
 return {
+
   {
     "nvim-telescope/telescope.nvim",
     opts = {
@@ -18,6 +19,7 @@ return {
       config = function()
         require("telescope").load_extension("fzf")
         require("telescope").load_extension("luasnip")
+        require("telescope").load_extension("flutter")
       end,
     },
   },
