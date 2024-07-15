@@ -3,7 +3,7 @@
 -- Add any additional keymaps here
 
 vim.keymap.set("n", "<leader>sp", '<cmd>lua require("spectre").open_file_search()<CR>', {
-  desc = "Search on current file",
+  desc = "Search in current file",
 })
 
 vim.keymap.set("n", "<leader>t", function()
