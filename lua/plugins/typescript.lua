@@ -1,14 +1,3 @@
 return {
-  -- {
-  --   "pmizio/typescript-tools.nvim",
-  --   dependencies = { "nvim-lua/plenary.nvim", "neovim/nvim-lspconfig" },
-  --   opts = {},
-  -- },
-  {
-    "dmmulroy/tsc.nvim",
-    opts = {
-      setup = {},
-      spinner = { ".", "|" },
-    },
-  },
+  { "dmmulroy/tsc.nvim", opts = {} },
 }

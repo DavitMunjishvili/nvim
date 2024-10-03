@@ -1,4 +1,13 @@
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+
+os.execute('wezterm cli set-tab-title "$(basename "$(pwd)")"')
+
+vim.api.nvim_create_autocmd("VimLeave", {
+  callback = function()
+    os.execute('wezterm cli set-tab-title ""')
+  end,
+})
+
 if not vim.loop.fs_stat(lazypath) then
   vim.fn.system({
     "git",

@@ -4,7 +4,6 @@ return {
     dependencies = {},
     ---@class PluginLspOpts
     opts = {
-      servers = {},
       diagnostics = {
         virtual_text = {
           spacing = 4,
