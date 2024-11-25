@@ -5,4 +5,4 @@
 vim.opt.cursorline = false
 -- vim.o.background = "light"
 
-vim.g.root_spec = { "cwd" }
+-- vim.g.root_spec = { "cwd" }
